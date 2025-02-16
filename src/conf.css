@@ -1,0 +1,148 @@
+@import "tailwindcss";
+ 
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #DAC0A3;
+  color: #312c25;
+  
+  /* color: #999ab4; */
+}
+
+.bg-custom {
+  width: 100%;
+  height: 100vh;
+ 
+  background-image: linear-gradient(#cfb79c.1em, transparent .1em), linear-gradient(90deg, #cfb79c .1em, transparent .1em);
+  background-size: 7em 7em;
+}
+
+.libre-400 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-400 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lora-400 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 535;
+  font-style: normal;
+}
+
+.poppins-400 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-500 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-300 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-600 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.oswald-400 {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@keyframes typing {
+  0% { content: ""; }
+  2% { content: "H"; }
+  4% { content: "He"; }
+  6% { content: "Hel"; }
+  8% { content: "Hell"; }
+  10% { content: "Hello"; }
+  12% { content: "Hello "; }
+  14% { content: "Hello D"; }
+  16% { content: "Hello Di"; }
+  18% { content: "Hello Dia"; }
+  20% { content: "Hello Dian"; }
+  22% { content: "Hello Diand"; }
+  24% { content: "Hello Diandr"; }
+  26% { content: "Hello Diandra"; }
+  28% { content: "Hello Diandra "; }
+  30% { content: "Hello Diandra R"; }
+  32% { content: "Hello Diandra Ra"; }
+  34% { content: "Hello Diandra Ram"; }
+  36% { content: "Hello Diandra Rama"; }
+  38% { content: "Hello Diandra Ramad"; }
+  40% { content: "Hello Diandra Ramadh"; }
+  42% { content: "Hello Diandra Ramadha"; }
+  44% { content: "Hello Diandra Ramadhan"; }
+  46% { content: "Hello Diandra Ramadhani"; }
+  48% { content: "Hello Diandra Ramadhani :3"; }
+  50% { content: "Hello Diandra Ramadhani :3"; }
+  52% { content: "Hello Diandra Ramadhani :3"; }
+  54% { content: "Hello Diandra Ramadhani :3"; }
+  56% { content: "Hello Diandra Ramadhani :3"; }
+  58% { content: "Hello Diandra Ramadhani :"; }
+  60% { content: "Hello Diandra Ramadhani"; }
+  62% { content: "Hello Diandra Ramadhan"; }
+  64% { content: "Hello Diandra Ramadha"; }
+  66% { content: "Hello Diandra Ramadh"; }
+  68% { content: "Hello Diandra Ramad"; }
+  70% { content: "Hello Diandra Rama"; }
+  72% { content: "Hello Diandra Ram"; }
+  74% { content: "Hello Diandra Ra"; }
+  76% { content: "Hello Diandra R"; }
+  78% { content: "Hello Diandra "; }
+  80% { content: "Hello Diandr"; }
+  82% { content: "Hello Diand"; }
+  84% { content: "Hello Dian"; }
+  86% { content: "Hello Dia"; }
+  88% { content: "Hello Di"; }
+  90% { content: "Hello D"; }
+  92% { content: "Hello "; }
+  94% { content: "Hell"; }
+  96% { content: "Hel"; }
+  98% { content: "He"; }
+  100% { content: "H"; }
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing-anim {
+  --caret: currentcolor;
+}
+
+.typing-anim::before {
+  content: "";
+  animation: typing 10s infinite;
+}
+
+.typing-anim::after {
+  content: "";
+  border-right: 1ch solid var(--caret);
+  animation: blink 1s linear infinite;
+}
