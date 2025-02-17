@@ -15,11 +15,11 @@ export default function Lists ({sectionRefs}) {
             "listStyle": "upper-roman"
           }}>
             <li>
-              <b>Opening / <a href="#introduction" className="underline text-white oswald-400"><i>Introduction</i></a></b>
+              <b>Opening / <a href="#introduction" className="underline text-white oswald-400 "><i className="text-gray-300">Introduction</i></a></b>
               <ul className='pl-3 oswald-400' style={
                 {"listStyle": "'- '"}
               }>
-                <li><b>Opening: </b>Thanks, Esspecialy for <a href="https://instagram.com/_ddiandraa" target='_blank' className='underline'><i>Diandra Ramadhani</i></a></li>
+                <li><b>Opening: </b>Thanks, Esspecialy for <a href="https://instagram.com/_ddiandraa" target='_blank' className='underline'><i >Diandra Ramadhani</i></a></li>
                 <li><b>Opening: </b> Who Is This For? </li>
               </ul>
             </li>
@@ -95,6 +95,9 @@ export default function Lists ({sectionRefs}) {
               </ul>
             </li>
           </ol>
+        </div>
+        <div className=" w-full h-auto flex justify-center  mb-20">
+            <p className="oswald-400"><i> ~Let's Start The Journey!!~</i></p>
         </div>
       </div>
     )
