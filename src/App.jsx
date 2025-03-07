@@ -6,6 +6,16 @@ import Chapter_0 from './page/chapter/0'
 import Home from './page/home'
 import Introduction from './page/introdcution'
 
+function OPC ({imgUrl, paraf}) {
+  return (
+    <div className={`w-full md:h-[250px] h-[200px] bg-center backdrop-brightness-50 grayscale-100 bg-[url(${imgUrl == "" ? "/4dianr/img/Chapter-0/Meet-And-Talk/MPLS-FB1.jpeg" : imgUrl})] bg-no-repeat bg-cover `}>
+        <div className="w-full h-full flex justify-center items-center backdrop-blur-lg">
+          <h1 className="text-white lora-400 text-4xl">Chapter {paraf}.</h1>
+        </div>
+    </div>
+  )
+}
+
 function App() {
 
   const [userListen, setUserListen] = useState("Home")
@@ -85,10 +95,13 @@ function App() {
       <Lists sectionRefs={sectionRefs}>
 
       </Lists>
-      <Chapter_0 refs={sectionRefs}>
+      <OPC imgUrl={""} paraf={0}> 
+        {/* imgUrl="", "" sends default value */}
 
+      </OPC>
+      <Chapter_0 refs={sectionRefs}>
       </Chapter_0>
-      </div>
+    </div>
   )
 }
 
